@@ -1,4 +1,4 @@
-Skolera task
+**Skolera task**
 
 APIs:
 
@@ -40,7 +40,30 @@ APIs:
     method: post
     params: name
 
+7- Edit Student
+    
+    URL: https://quiet-caverns-33249.herokuapp.com/students/:id     #where :id => student_id
+    method: put
+    params: name
 
+8- Edit Teacher
+    
+    URL: https://quiet-caverns-33249.herokuapp.com/teachers/:id     #where :id => teacher_id
+    method: put
+    params: name
+
+9- Student Enrolment
+    
+    URL: https://quiet-caverns-33249.herokuapp.com/stuednts/enrol
+    method: post
+    params: student_id, course_id
+    
+10- Teacher Enrolment
+    
+    URL: https://quiet-caverns-33249.herokuapp.com/teachers/teaches
+    method: post
+    params: teacher_id, course_id
+    
 
 * Important note: All APIs except sign-up and sign-in must pass uid, client and access-token in the request headers.
     
