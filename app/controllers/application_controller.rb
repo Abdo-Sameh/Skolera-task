@@ -1,9 +1,10 @@
 class ApplicationController < ActionController::API
+  include DeviseTokenAuth::Concerns::SetUserByToken
   # acts_as_token_authentication_handler_for User
 
   # Security note: controllers with no-CSRF protection must disable the Devise fallback,
   # see #49 for details.
-  acts_as_token_authentication_handler_for User, fallback: :none
+  # acts_as_token_authentication_handler_for User, fallback: :none
 
   # The token authentication requirement can target specific controller actions:
   # acts_as_token_authentication_handler_for User, only: [:create, :update, :destroy]

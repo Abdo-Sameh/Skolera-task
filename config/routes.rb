@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
+  mount_devise_token_auth_for 'User', at: 'auth'
   # devise_for :users
-  resources :sessions, only: [:create, :destroy]
-  resources :courses, only: [:create, :enrol]
+  # resources :sessions, only: [:create, :destroy]
+  resources :courses, only: [:create]
   resources :students, only: [:create, :update]
   resources :teachers, only: [:create, :update]
   get '/users/csv', to: 'users#csv'

@@ -1,5 +1,5 @@
 class TeachersController < ApplicationController
-
+  before_action :authenticate_user!
   def create
     teacher = Teacher.new(teacher_params)
 
