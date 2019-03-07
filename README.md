@@ -18,4 +18,29 @@ APIs:
 
     URL: https://quiet-caverns-33249.herokuapp.com/auth/sign_out
     method: delete
-    note: you must pass uid, client, and access-token in the request headers.
+    
+
+4- Create Course
+    
+    URL: https://quiet-caverns-33249.herokuapp.com/courses
+    method: post
+    params: name
+    
+    
+5- Create Student
+    
+    URL: https://quiet-caverns-33249.herokuapp.com/students
+    method: post
+    params: name
+        
+    
+6- Create Teacher
+    
+    URL: https://quiet-caverns-33249.herokuapp.com/teachers
+    method: post
+    params: name
+
+
+
+* Important note: All APIs except sign-up and sign-in must pass uid, client and access-token in the request headers.
+    
