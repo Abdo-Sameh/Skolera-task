@@ -65,5 +65,5 @@ APIs:
     params: teacher_id, course_id
     
 
-* Important note: All APIs except sign-up and sign-in must pass uid, client and access-token in the request headers.
+* Important note: For sign-out API you must pass uid, client and access-token in the request headers.
     

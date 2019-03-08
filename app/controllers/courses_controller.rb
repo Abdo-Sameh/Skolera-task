@@ -1,5 +1,5 @@
 class CoursesController < ApplicationController
-  before_action :authenticate_user!
+  # before_action :authenticate_user!
 
   def create
     course = Course.new(course_params)

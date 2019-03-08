@@ -6,5 +6,6 @@ class CreateTeachings < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
+    add_index :teachings, [:teacher_id, :course_id], unique: true
   end
 end
